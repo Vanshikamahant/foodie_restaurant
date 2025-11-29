@@ -95,9 +95,55 @@ python manage.py createsuperuser
 6️⃣ Run the Server
 python manage.py runserver
 
-🧪 Screenshots (Optional)
+🧪 Screenshots 
+Home page
+<img width="1920" height="1080" alt="Screenshot 2025-11-01 132730" src="https://github.com/user-attachments/assets/09cceaba-448a-4cef-aad7-80c1c30c8d44" />
 
-Add screenshots later to make your README more attractive.
+About page
+<img width="1920" height="1080" alt="Screenshot 2025-11-01 132826" src="https://github.com/user-attachments/assets/1c329a78-09e7-4f01-bc38-b9824ed5b808" />
+
+Menu page
+<img width="774" height="890" alt="Screenshot 2025-11-01 162155" src="https://github.com/user-attachments/assets/9ec3cc4a-2ebb-4448-9e54-af63323fd959" />
+
+Book table page
+<img width="1894" height="903" alt="Screenshot 2025-11-01 161910" src="https://github.com/user-attachments/assets/384bef76-ca8c-4c41-a84d-c1124cae998c" />
+
+Feedback page
+<img width="1920" height="1080" alt="Screenshot 2025-11-01 132837" src="https://github.com/user-attachments/assets/baffc1bf-a7d2-4599-a2ba-909736b9de75" />
+<img width="1550" height="786" alt="Screenshot 2025-11-01 133245" src="https://github.com/user-attachments/assets/58380c3c-9290-4db1-b37b-113631c90cd8" />
+
+Flowchart
+flowchart TD
+
+A[User Visits Website] --> B{Is User Logged In?}
+
+B -->|No| C[Show Login / Register Page]
+B -->|Yes| D[Show Homepage]
+
+C --> C1[User Registers or Logs In]
+C1 --> D
+
+D --> E[View Menu]
+
+E --> F{Select a Dish?}
+F -->|Yes| G[View Dish Details]
+F -->|No| D
+
+G --> H{Place Reservation / Contact?}
+H -->|Yes| I[Submit Form]
+H -->|No| E
+
+I --> J[Store Data in Database]
+J --> K[Show Success Message]
+K --> D
+
+%% Admin Panel
+A --> L[Admin Login]
+L --> M[Admin Dashboard]
+M --> N[Manage Menu Items: Add/Edit/Delete]
+M --> O[Upload Dish Images]
+M --> P[View Contact/Reservation Forms]
+
 
 🚀 Future Improvements
 
@@ -119,6 +165,7 @@ For major changes, open an issue first.
 📝 License
 
 Licensed under the MIT License.
+
 👩‍💻 Author
 
 Vanshika Mahant
