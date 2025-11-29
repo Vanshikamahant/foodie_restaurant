@@ -3,115 +3,122 @@ A Django-powered restaurant web app with menu management, food listings, image u
 🍽️ Foodie Restaurant – Django Web Application
 <p align="center"> <img src="https://img.shields.io/badge/Python-3.x-blue" /> <img src="https://img.shields.io/badge/Django-Framework-green" /> <img src="https://img.shields.io/badge/Status-Active-success" /> <img src="https://img.shields.io/badge/License-MIT-yellow" /> </p>
 
-Foodie Restaurant is a full-featured Django web application designed for restaurant management.
-It allows users to view menu items, upload images, manage food categories, authenticate, and handle simple orders.
-The frontend is built using HTML, CSS, and Bootstrap, ensuring a clean and responsive user interface.
+🍽️ Foodies – Restaurant Website (Django Project)
 
-⭐ Features
-Category	Description
-🔐 Authentication	User signup, login & logout
-🍔 Menu System	Add, edit, delete food items
-🖼️ Image Uploads	Upload dish images using Django Media
-🛒 Orders (Optional)	Add to cart, checkout summary
-🛠️ Admin Management	Manage menu, categories, users
-📱 Responsive UI	Built with Bootstrap
-🗂️ Database	SQLite (default)
+A full-featured restaurant website built with Django, offering menu management, user accounts, image upload, and a responsive UI.
+
+📌 Overview
+
+Foodies is a modern restaurant web application built to showcase dishes, manage menu items, and allow customer interaction.
+It comes with a clean layout, admin management, and dynamic pages.
+
 🛠️ Tech Stack
+Component	Technology
+Backend	Django (Python)
+Frontend	HTML, CSS, JavaScript, Bootstrap
+Database	SQLite (default)
+Version Control	Git & GitHub
+Media Uploads	Django File/Image Handling
+✨ Features
+🔹 User Authentication
 
-Python 3
+Register, Login, Logout
 
-Django Framework
+Secure password hashing
 
-HTML5, CSS3, Bootstrap
+Form validations
 
-SQLite Database
+🔹 Restaurant Menu
 
-Git & GitHub
+Add/Edit/Delete Dishes (Admin)
 
-VS Code
+Show dish images, prices, categories
+
+Dynamic rendering using Django ORM
+
+🔹 Image/File Upload Support
+
+Upload food images
+
+Display uploaded images in templates
+
+🔹 Responsive Frontend
+
+Mobile-friendly layouts
+
+Static files (CSS, JS, Images) configured
+
+🔹 Admin Dashboard
+
+Manage menu items
+
+Manage categories
+
+Manage contact/reservation entries
 
 📁 Project Structure
-foodie_restaurant/
-│── foodie_restaurant/        # Main Django project (settings, URLs)
-│── app/                      # Django application
-│── templates/                # HTML templates
-│── static/                   # CSS, JS, Images
-│── media/                    # Uploaded images
-│── requirements.txt          # Python dependencies
-│── db.sqlite3                # Database
-│── manage.py
+foodies_restaurant/
+│
+├── foodie_app/
+│   ├── migrations/
+│   ├── templates/
+│   ├── static/
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── forms.py
+│
+├── media/
+├── templates/
+├── static/
+├── manage.py
+└── README.md
 
-🚀 Run This Project Locally
-1. Clone the repository
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
 git clone https://github.com/Vanshikamahant/foodie_restaurant.git
-
-2. Navigate into the project folder
 cd foodie_restaurant
 
-3. Create virtual environment
+2️⃣ Create Virtual Environment
 python -m venv env
-
-4. Activate environment
-
-Windows
-
 env\Scripts\activate
 
-
-Mac/Linux
-
-source env/bin/activate
-
-5. Install dependencies
+3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-6. Apply database migrations
+4️⃣ Apply Migrations
 python manage.py migrate
 
-7. Start the development server
-python manage.py runserver
-
-
-🔗 Open in browser:
-
-http://127.0.0.1:8000/
-
-🔐 Admin Panel
-
-Create superuser:
-
+5️⃣ Create Superuser
 python manage.py createsuperuser
 
+6️⃣ Run the Server
+python manage.py runserver
 
-Admin login page:
+🧪 Screenshots (Optional)
 
-http://127.0.0.1:8000/admin/
+Add screenshots later to make your README more attractive.
 
-📸 Screenshots (Add Your Images)
+🚀 Future Improvements
 
-You can place screenshots inside a screenshots/ folder and reference them:
+Online food ordering
 
-![Home Page](screenshots/home.png)
-![Menu Page](screenshots/menu.png)
-![Admin Panel](screenshots/admin.png)
+Cart & checkout system
+
+Payment gateway
+
+Customer reviews
+
+User profile dashboard
 
 🤝 Contributing
 
-Contributions are welcome!
+Pull requests are welcome!
+For major changes, open an issue first.
 
-Fork the repository
+📝 License
 
-Create a new branch (feature-branch)
-
-Commit your changes
-
-Push your branch
-
-Open a Pull Request
-
-📜 License
-MIT © 2025 Vanshika Mahant
-
+Licensed under the MIT License.
 👩‍💻 Author
 
 Vanshika Mahant
